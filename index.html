@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header id="hero">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Enter your user information in order to register correctly</p>
+    </header>
+    <div id="wrapper">
+        <form action="#" id="survey-form">
+            <label for="name" id="name-label" class="input-label">Name: </label>
+            <input type="text" id="name" class="input-field" placeholder="Enter your name" required>
+            <label for="email" id="email-label" class="input-label">Email: </label>
+            <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+            <label for="number" id="number-label" class="input-label">Number: </label>
+            <input type="number" id="number" class="input-field" placeholder="Enter your phone number" required min="20000000"
+                max="79999999">
+            <label for="dropdown" class="input-label"> Country: </label>
+            <select name="country" id="dropdown" class="input-field">
+                <option value="Canada" selected>Canada</option>
+                <option value="USA">USA</option>
+                <option value="Spain">Spain</option>
+            </select>
+            <fieldset>
+                <legend class="input-label">Choose your sex: </legend>
+                <input type="radio" id="female" name="sex" value="F" checked>
+                <label for="female"> Female</label><br>
+                <input type="radio" id="male" name="sex" value="M">
+                <label for="male"> Male</label><br>
+            </fieldset>
+            <fieldset>
+                <legend class="input-label">Choose your language(s): </legend>
+                <input type="checkbox" id="english" name="language" value="en">
+                <label for="english"> English</label><br>
+                <input type="checkbox" id="spanish" name="language" value="es">
+                <label for="spanish"> Spanish</label><br>
+                <input type="checkbox" id="french" name="language" value="fr">
+                <label for="french"> French</label><br>
+            </fieldset>
+            <div id="comment-area">
+                <p class="input-label">Any comments or suggestiones?</p>
+                <textarea name="comment" id="comment" cols="30" rows="10"
+                    placeholder="Enter a comment here..."></textarea>
+            </div>
+            <button class="input-field" id="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

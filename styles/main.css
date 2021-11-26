@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+:root {
+    font-family: 'Raleway', sans-serif;
+    --primary-font: #FFF;
+}
+
+body {
+    background: url('https://thumbs.dreamstime.com/b/d-illustration-rendering-abstract-concept-tech-wallpaper-elements-led-light-rising-depht-field-bokeh-glass-reflections-159412702.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#hero {
+    text-align: center;
+    color: var(--primary-font);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transform: scale(1.2);
+}
+
+#wrapper {
+    background: url('../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 50px;
+    box-sizing: border-box;
+    max-width: 700px;
+    margin: auto;
+    border: solid 1px var(--primary-font);
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #000;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label {
+    font-size: x-large;
+    color: var(--primary-font);
+}
+
+.input-field {
+    font-family: inherit;
+    height: 30px;
+    font-size: larger;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#dropdown {
+    height: 40px;
+}
+
+fieldset label {
+    font-size: larger;
+    color: var(--primary-font);
+}
+
+#comment-area p {
+    margin-bottom: 0px;
+}
+
+#comment {
+    width: 100%;
+    font-size: x-large;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#submit {
+    font-weight: bold;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+}
